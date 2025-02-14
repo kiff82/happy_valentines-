@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff0f6; /* lys romantisk rosa bakgrunn */
+}
+
+/* Valentinsmelding-styling */
+.valentine-message {
+  text-align: center;
+  padding: 20px 0;
+  background: #ffe6e9; /* myk rosa */
+  font-family: 'Brush Script MT', cursive;
+  color: #e60073;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Kartcontainer; høyden er redusert for å gi plass til meldingen */
+#map {
+  height: calc(100% - 120px);
+  width: 100%;
+  position: relative;
+}
+
+/* Hjerteanimasjon */
+.heart-container {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.heart {
+  position: absolute;
+  font-size: 24px;
+  animation: float 5s infinite ease-in;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Popup-innhold med bilder */
+.popup-content {
+  text-align: center;
+}
+.popup-content img {
+  display: inline-block;
+  max-width: 150px; /* tilpasset flere bilder */
+  border-radius: 5px;
+  margin: 4px;
+}
+.popup-content strong {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.2em;
+  color: #e60073;
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  max-width: 150px;
+  margin: 10px auto;
+}
+.slider .slides .slide {
+  display: none;
+}
+.slider .slides .slide img {
+  width: 100%;
+  border-radius: 5px;
+}
+.slider button.prev,
+.slider button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.slider button.prev {
+  left: 0;
+}
+.slider button.next {
+  right: 0;
+}

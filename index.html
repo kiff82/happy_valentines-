@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Verdenskart med Bilder</title>
+    
+    <!-- Leaflet CSS (for kartstiling) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="anonymous"
+    />
+
+    <!-- Egen stil -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Valentinsmelding -->
+    <div class="valentine-message">
+      <h1>Jeg elsker deg, PrincessKiri! God Valentinsdag!</h1>
+    </div>
+
+    <!-- Container for hjerteanimasjon -->
+    <div class="heart-container">
+      <div class="heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+      <div class="heart" style="left: 30%; animation-delay: 1s;">❤️</div>
+      <div class="heart" style="left: 50%; animation-delay: 2s;">❤️</div>
+      <div class="heart" style="left: 70%; animation-delay: 3s;">❤️</div>
+      <div class="heart" style="left: 90%; animation-delay: 4s;">❤️</div>
+    </div>
+
+    <!-- Kartcontainer -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Eget script -->
+    <script src="script.js"></script>
+  </body>
+</html>
